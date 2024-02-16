@@ -20,11 +20,14 @@ void shortestPath(int matrix[N][N])
 
             for (int j = 0; j < N; ++j)
             {
-                if(i != j && (matrix[i][k] > 0 && matrix[k][j] > 0))
+                if(i != j)
                 {
-                    if(matrix[i][j] > matrix[i][k] + matrix[k][j])
-                    {
-                        matrix[i][j] = matrix[i][k] + matrix[k][j];
+                    if(matrix[i][k] > 0 && matrix[k][j] > 0) {
+
+
+                        if (matrix[i][j] > matrix[i][k] + matrix[k][j]) {
+                            matrix[i][j] = matrix[i][k] + matrix[k][j];
+                        }
                     }
                 }
             }

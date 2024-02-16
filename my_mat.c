@@ -14,7 +14,7 @@ void init(int matrix[N][N])
 
 void shortestPath(int matrix[N][N])
 {
-    for(int k = 1; k < N; k++)
+    for(int k = 0; k < N; k++)
     {
         for (int i = 0; i < N; i++) {
 

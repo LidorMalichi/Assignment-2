@@ -39,9 +39,11 @@ void isThereAPath(int matrix[N][N], int isValidMatrix)
     if(isValidMatrix == 0 || matrix[i][j] == 0)
     {
         printf("False\n");
-        return;
     }
-    printf("True\n");
+    else{
+        printf("True\n");
+    }
+
 }
 
 void shortestPathWeight(int matrix[N][N], int isValidMatrix)
@@ -51,8 +53,10 @@ void shortestPathWeight(int matrix[N][N], int isValidMatrix)
     if(isValidMatrix == 0 || matrix[i][j] == 0)
     {
         printf("-1\n");
-        return;
     }
-    printf("%d\n", matrix[i][j]);
+    else{
+        printf("%d\n", matrix[i][j]);
+    }
+
 
 }

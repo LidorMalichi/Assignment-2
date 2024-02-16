@@ -67,7 +67,7 @@ void printItems(char products[], int selected_bool[]){
     printf("Selected Items: ");
     for(int i=0; i<N; i++){
         if(selected_bool[i] == 1){
-            printf("%c", products[i]);
+            printf(" %c", products[i]);
         }
     }
 }

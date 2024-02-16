@@ -50,9 +50,9 @@ void shortestPathWeight(int matrix[N][N], int isValidMatrix)
     scanf("%d %d", &i, &j);
     if(isValidMatrix == 0 || matrix[i][j] == 0)
     {
-        printf("-1");
+        printf("-1\n");
         return;
     }
-    printf("%d", matrix[i][j]);
+    printf("%d\n", matrix[i][j]);
 
 }

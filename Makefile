@@ -17,7 +17,7 @@ my_Knapsack: $(KNAPSACK:.c=.o)
 my_graph: $(GRAPH:.c=.o) $(MATRIX)
 	$(CC) $(CFLAGS) $< ./$(MATRIX) -o $@
 
-MATRIX: $(OBJ:.c=.o)
+$(MATRIX): $(OBJ:.c=.o)
 	$(CC) -shared $(CFLAGS) $^ -o $@
 
 $(SRC:.c=.o): $(SRC) $(HEADER)
